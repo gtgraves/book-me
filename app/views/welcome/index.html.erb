@@ -2,4 +2,9 @@
 <div class="jumbotron text-center">
   <h1>Book Me</h1>
   <p>A new appointment app</p>
+  <% if user_signed_in? %>
+    <p>Continue on to your calendars!</p>
+  <% else %>
+    <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %>
+  <% end %>
 </div>

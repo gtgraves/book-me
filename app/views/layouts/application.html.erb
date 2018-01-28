@@ -16,8 +16,8 @@
           <%= link_to "Home", root_path, :class => 'nav-link'%>
         </li>
         <% if user_signed_in? %>
-          <li class="nav-item nav-link">
-            <%= current_user.email %>
+          <li class="nav-item">
+            <%= link_to current_user.email, edit_user_registration_path, :class => 'nav-link'%>
           </li>
           <li class="nav-item">
             <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'nav-link'%>

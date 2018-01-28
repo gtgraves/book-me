@@ -23,8 +23,9 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
-gem 'bootstrap'
+gem 'bootstrap', '~> 4.0.0'
 gem 'figaro'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug'
